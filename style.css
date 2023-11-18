@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 1000;
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    margin: 3vh auto 2vh;
+
+    
+    
+    
+}
+.menu img{
+    width: 25px;
+    height: auto;
+
+
+}
+.primer-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.primer-sec button{
+    all: unset;
+    font-family: Arial;
+    color: black;
+    padding: 10px;
+}
+.primer-sec button:focus{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 40px;
+}
+
+.segunda-sec{
+    background-color: rgb(212, 212, 212);
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:20px;
+    
+
+
+}
+.busca{
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+    font-size: 2vh;
+    
+}
+.busca input{
+    border: 0;
+    outline: none;
+    background-color: rgb(212, 212, 212);
+    font-family: arial;
+    color: rgb(113, 113, 113);
+
+}
+
+.busca img{
+    width: 15px;
+    height: auto;
+}
+
+.tercer-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.tercer-sec img{
+    border-radius: 100%;
+}
+#navbar-pinterest a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#navbar-pinterest a:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+}
+
+/*CARD--*/
+.card-image{
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+
+  
+
+}
+
+.card-image img{
+    max-width: 100%;
+    border-radius: 15px;
+
+}
+
+.box-over{
+    opacity:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+
+
+
+}
+
+.box-over:hover{
+    opacity:1;
+    background-color: rgba(0, 0, 0, 0.229);
+ 
+    
+}
+
+.icon-compartir{
+    width:25px;
+    height: 25px;
+    background-image:url(http://127.0.0.1:5500/img/comparit_2@300x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(226, 226, 226, 0.795);
+    border-radius: 100%;
+}
+
+.mas{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    border-radius: 100%;
+    background-color: rgba(226, 226, 226, 0.795);
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+.botones-inferiores{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    border: none;
+}
+.more-option{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgba(226, 226, 226, 0.795);
+    font-size: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+/*layout*/
+.template-cards{
+  width: 1400px;
+  margin: 20px auto ;
+  columns: 5;
+  column-gap: 200px;
+}
+/*responsive*/
+@media(max-width: 1800px){
+   .template-cards{
+    width: 700px;
+    columns: 4;
+    margin: auto 120px;
+    column-gap: 330px;
+   }
+}
+
+@media(max-width: 1000px){
+    .template-cards{
+     width: 700px;
+     margin: 20px 35px;
+     columns: 3;
+     column-gap: 250px;
+    }
+ }
+
+ @media(max-width: 850px){
+    .template-cards{
+     width: 700px;
+     margin: 20px 35px;
+     columns: 1;
+     column-gap: 250px;
+    }
+ }
